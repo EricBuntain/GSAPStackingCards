@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Stacking Cards */
+.stacking-cards {
+    height: 100svh;
+    max-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
+}
+
+.stacking-cards .gsap-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.stacking-cards .main-wrapper {
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+}
+
+.stacking-cards .cards-container {
+    position: relative;
+}
+
+.stacking-cards .card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 12px;
+    padding-bottom: 60px;
+    /* padding-inline: 35px; */
+    padding-top: 30px;
+    will-change: transform, opacity;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.stacking-cards .card-content {
+    max-width: 600px;
+    width: 100%;
+}
+
+.stacking-cards .card-content__heading {
+    gap: 12px;
+    padding-bottom: 31px;
+}
+
+.stacking-cards .card-content__heading h4 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.stacking-cards .card-content__heading span {
+    font-size: 24px;
+}
+
+.stacking-cards .card-content p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.stacking-cards .card-text {
+    width: 100%;
+    text-align: center;
+    padding: 24px;
+}
+
+/* Placeholder Sections */
+.placeholder {
+    height: 500px;
+    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+}
+
+/* Card Backgrounds */
+.background--orange {
+    background-color: #FF7F11;
+    color: #000;
+}
+
+.background--seafoam {
+    background-color: #ACBFA4;
+    color: #000;
+}
+
+.background--minty {
+    background-color: #E2E8CE;
+    color: #000;
+}
+
+.background--black {
+    background-color: #262626;
+    color: #fff;
+}
+
+.background--burnt {
+    background-color: #CC561E;
+    color: #000;
+}
+
+/* Flex Utilities */
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.a-c {
+    align-items: center;
+}
